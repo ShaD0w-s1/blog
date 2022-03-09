@@ -1,19 +1,34 @@
 {
-  "name": "blog",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.2.25"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.0",
-    "typescript": "^4.5.4",
-    "vite": "^2.8.0",
-    "vue-tsc": "^0.29.8"
-  }
+    "name": "blog",
+    "private": true,
+    "version": "0.0.0",
+    "scripts": {
+        "dev": "vite dev --mode development",
+        "build:test": "vue-tsc --noEmit && vite build --mode test",
+        "build:prod": "vue-tsc --noEmit && vite build --mode production",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "naive-ui": "^2.26.1",
+        "pinia": "^2.0.11",
+        "stylelint-config-prettier": "^9.0.3",
+        "vue": "^3.2.25",
+        "vue-router": "4.0.13"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.14.0",
+        "@typescript-eslint/parser": "^5.14.0",
+        "@vitejs/plugin-vue": "^2.2.0",
+        "eslint": "^8.10.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-vue": "^8.5.0",
+        "prettier": "^2.5.1",
+        "sass": "^1.49.9",
+        "stylelint": "^14.5.3",
+        "stylelint-config-airbnb": "^0.0.0",
+        "typescript": "^4.5.4",
+        "vite": "^2.8.0",
+        "vue-tsc": "^0.29.8"
+    }
 }
